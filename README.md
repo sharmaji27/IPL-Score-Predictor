@@ -12,5 +12,6 @@ I made some improvisations in his code like I totally removed the result page an
 And also I took venue as a feature while training as I think that it ca really play a major role in predicting score.  
 Deployed using Flask.  
 Just run app.py and go to localhost to see the results.  
-  
+
+
 ![](ipl.gif)
