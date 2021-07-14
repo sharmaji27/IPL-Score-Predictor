@@ -117,7 +117,7 @@ def predict():
             a = a + [0,0,0,0,0,0,0,1]
 
         if batting_team==bowling_team and batting_team!='none' and bowling_team!='none':
-            return render_template('home.html',val='Batting team and Bowling team cant be same')
+            return render_template('home.html',val='Batting team and Bowling team cant be same and none of the values can\'t be empty.')
 
 
 
@@ -141,8 +141,9 @@ def predict():
 
         data = np.array([a])
         my_prediction = int(regressor.predict(data)[0])
+        print(my_prediction)
 
-        return render_template('home.html', val='The final score will be around {} to {}.'.format(my_prediction-5,my_prediction+10))
+        return render_template('home.html', val=f'The final score will be around {my_prediction-5} to {my_prediction+10}.')
 
 
 if __name__ == '__main__':
