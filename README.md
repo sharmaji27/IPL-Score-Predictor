@@ -13,4 +13,6 @@
 - Deployed using Flask.  
 - Just run app.py and go to localhost to see the results.  
 
+Do visit my blog for better explanations: https://machinelearningprojects.net/ipl-score-prediction/
+
 ![](ipl.gif)
